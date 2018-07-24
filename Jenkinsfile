@@ -12,12 +12,12 @@ node{
       Thanks
       Hari''', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: 'malli.222eee@gmail.com'
    }
-   //stage('Slack Notification'){
-     //  slackSend baseUrl: 'https://hooks.slack.com/services/',
-       //channel: '#jenkins-pipeline-demo',
-       //color: 'good', 
-       //message: 'Welcome to Jenkins, Slack!', 
-       //teamDomain: 'javahomecloud',
-       //tokenCredentialId: 'slack-demo'
-   //}
+   stage('Slack Notification'){
+       slackSend baseUrl: 'https://hooks.slack.com/services/',
+       channel: '#jenkins-pipeline-demo',
+       color: 'good', 
+       message: 'Welcome to Jenkins, Slack!', 
+       teamDomain: 'javahomecloud',
+       tokenCredentialId: 'slack-demo'
+   }
 }
